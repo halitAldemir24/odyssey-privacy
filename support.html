@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — Road to Ithaka</title>
+<meta name="description" content="Support and help for Road to Ithaka." />
+<style>
+  :root {
+    --bg: #0d0b0a; --surface: #161210; --border: #2a221e; --text: #ece4da;
+    --muted: #a39789; --accent: #e8703c; --accent-soft: #2a1710;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fbf8f4; --surface: #f3ede6; --border: #e3d9cd; --text: #1c1714;
+      --muted: #6f6358; --accent: #b8341f; --accent-soft: #f6e3dc;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { margin-bottom: 40px; }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px;
+    border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+    font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+  }
+  .brand::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  h1 { font-size: 36px; line-height: 1.2; margin: 18px 0 10px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  section { margin: 40px 0; }
+  section h2 { font-size: 22px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  ul li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .card {
+    margin: 24px 0; padding: 22px 24px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 12px;
+  }
+  .card .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 6px; }
+  .card a { font-size: 18px; font-weight: 600; text-decoration: none; }
+  .faq dt { font-weight: 600; margin-top: 18px; }
+  .faq dd { margin: 6px 0 0; }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+  .links { margin-top: 12px; }
+  .links a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="brand">Road to Ithaka</span>
+  <h1>Support</h1>
+  <p class="meta">Road to Ithaka</p>
+</header>
+
+<section>
+  <p>Questions, bugs or feedback about Road to Ithaka are welcome.</p>
+  <div class="card">
+    <p class="label">Contact</p>
+    <p><a href="mailto:halitaldemir23@gmail.com?subject=Road%20to%20Ithaka%20support">halitaldemir23@gmail.com</a></p>
+  </div>
+  <p>In the app, <strong>Settings &rarr; Support &amp; Feedback &rarr; Send Feedback</strong> copies a short diagnostic message (version, tracking status, stored distance) you can paste into your email.</p>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>My steps are not counting.</dt>
+    <dd>The quest needs the Motion &amp; Fitness permission and a phone with a step sensor. In iOS Settings &rarr; Road to Ithaka, make sure Motion &amp; Fitness is on; in the app, Settings &rarr; Quest Tracking shows what the pedometer is doing.</dd>
+    <dt>How is distance calculated?</dt>
+    <dd>Steps &times; your step length. Set it under Body Measurements: Automatic estimates it from your height, or choose an exact value.</dd>
+    <dt>How do friends work?</dt>
+    <dd>Every wanderer has a username. Share yours (Friends &rarr; Invites) or type a friend's to walk together; progress syncs while the app is online.</dd>
+    <dt>Can I move my quest to a new phone?</dt>
+    <dd>Settings &rarr; Quest Management &rarr; Save Quest copies your journey; send the text to the new device and use Load Quest there.</dd>
+    <dt>The journey stops at Ismarus.</dt>
+    <dd>This version covers the opening chapter, 235 km from Troy. Your distance keeps counting, and new roads open with updates.</dd>
+    <dt>How do I delete my online data?</dt>
+    <dd>See the <a href="delete.html">data deletion page</a>.</dd>
+  </dl>
+</section>
+
+<footer>
+  <div>&copy; 2026 Halit Aldemir</div>
+  <div class="links">
+    <a href="index.html">Privacy Policy</a>
+    <a href="delete.html">Delete my data</a>
+    <a href="support.html">Support</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>

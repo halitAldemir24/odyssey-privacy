@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Road to Ithaka</title>
+<meta name="description" content="Privacy policy for Road to Ithaka, a walking adventure." />
+<style>
+  :root {
+    --bg: #0d0b0a; --surface: #161210; --border: #2a221e; --text: #ece4da;
+    --muted: #a39789; --accent: #e8703c; --accent-soft: #2a1710;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fbf8f4; --surface: #f3ede6; --border: #e3d9cd; --text: #1c1714;
+      --muted: #6f6358; --accent: #b8341f; --accent-soft: #f6e3dc;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { margin-bottom: 40px; }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px;
+    border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+    font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+  }
+  .brand::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  h1 { font-size: 36px; line-height: 1.2; margin: 18px 0 10px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  section { margin: 40px 0; }
+  section h2 { font-size: 22px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  ul li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .card {
+    margin: 24px 0; padding: 22px 24px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 12px;
+  }
+  .card .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 6px; }
+  .card a { font-size: 18px; font-weight: 600; text-decoration: none; }
+  .faq dt { font-weight: 600; margin-top: 18px; }
+  .faq dd { margin: 6px 0 0; }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+  .links { margin-top: 12px; }
+  .links a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="brand">Road to Ithaka</span>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective October 6, 2026</p>
+</header>
+
+<section>
+  <p>Road to Ithaka is a walking adventure. This policy explains what the app stores on your device, what its anonymous online profile sends to Firebase, and how you can delete that data.</p>
+  <div class="card">
+    <p class="label">Developer and privacy contact</p>
+    <p>Halit Aldemir &middot; <a href="mailto:halitaldemir23@gmail.com">halitaldemir23@gmail.com</a></p>
+  </div>
+</section>
+
+<section>
+  <h2>Data stored on your device</h2>
+  <p>The app uses the phone's motion/physical-activity sensor to count steps and turn them into walking distance. Raw step readings, daily walking history, body/stride settings, quest progress, trophies, preferences and quest backups are stored locally on your device. The app does not request or collect precise or approximate location.</p>
+  <p>Local data is used to run the journey, display progress and calculate distance. It is not uploaded, except for the total walking distance described below. You can erase local quest data in <strong>Settings &rarr; Quest Management &rarr; End Quest</strong>, or remove the app.</p>
+</section>
+
+<section>
+  <h2>Anonymous online profile</h2>
+  <p>There is no sign-up, email address or password. The first time the app is opened it creates an anonymous online profile for that installation, using Firebase Authentication and Cloud Firestore, services provided by Google. The profile holds:</p>
+  <ul>
+    <li>a random anonymous account identifier;</li>
+    <li>your username (generated, later editable) and display name;</li>
+    <li>your total walking distance and the time of the last update;</li>
+    <li>your friend connections; and</li>
+    <li>an install record: when the app was first and last opened, the app version and build, the platform (iOS or Android), the device language and the time-zone offset. It contains no device identifier, advertising identifier or location.</li>
+  </ul>
+  <p>Friends, and only people who know your username, can see your display name, username, total distance and last-update time. The install record and the account identifier are not visible to other users.</p>
+  <p>This information is used only to reserve usernames, connect friends, show shared progress, keep the service running and secure it. It is not sold and is not used for advertising or tracking. Road to Ithaka currently contains no advertising, analytics or crash-reporting SDK.</p>
+  <p>Firebase Authentication also automatically processes technical information such as IP address, user-agent strings, Firebase app ID and device/app metadata to provide authentication, security, abuse prevention and service operation. Cloud Firestore requests made while signed in include the Firebase user ID.</p>
+</section>
+
+<section>
+  <h2>Sharing, security and processing</h2>
+  <p>Google processes the online data as a service provider for the developer. Data sent to Firebase is encrypted in transit; Firebase Authentication and Cloud Firestore also encrypt data at rest. Firebase may process data in the United States and other locations where Google or its service providers operate.</p>
+  <p>Road to Ithaka does not sell personal information. It does not share data with independent third parties for advertising or marketing. Data may be disclosed when required by law, to protect users or the service, or to service providers acting on the developer's instructions.</p>
+</section>
+
+<section>
+  <h2>Retention and deletion</h2>
+  <p>The online profile is kept until you delete it or ask the developer to do so. In the app, choose <strong>Settings &rarr; Privacy &amp; Data &rarr; Delete Online Profile</strong>. This deletes your profile, username reservation, install record, friend links and Firebase Authentication account. The app does not create a new profile afterwards unless you tap <strong>Create Online Profile</strong>. The local quest stays on your phone unless you also end it.</p>
+  <p>If you no longer have the app, you can request deletion on the <a href="delete.html">data deletion page</a>. Firebase may retain limited backup or security records for a period described in Google's terms and privacy documentation.</p>
+</section>
+
+<section>
+  <h2>Children</h2>
+  <p>Road to Ithaka is not directed to children under the minimum digital-consent age that applies in their country, and the developer does not knowingly seek personal information from children.</p>
+</section>
+
+<section>
+  <h2>Changes and contact</h2>
+  <p>Material changes will be reflected by updating this policy and its effective date. Privacy questions and deletion requests can be sent to <a href="mailto:halitaldemir23@gmail.com">halitaldemir23@gmail.com</a>.</p>
+</section>
+
+<footer>
+  <div>&copy; 2026 Halit Aldemir</div>
+  <div class="links">
+    <a href="index.html">Privacy Policy</a>
+    <a href="delete.html">Delete my data</a>
+    <a href="support.html">Support</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>
